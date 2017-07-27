@@ -1,0 +1,12 @@
+language: python
+sudo: false
+python:
+    - 3.5
+    - 3.4
+install:
+    - pip install --upgrade pip
+    - pip install --upgrade sphinx
+    - pip install jupyter_sphinx_theme
+    - pip install recommonmark
+script:
+    - cd docs && make html
